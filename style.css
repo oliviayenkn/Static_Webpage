@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,300;1,600;1,700;1,900&family=Signika:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* body{
+    display: flex;
+    flex-direction: column;
+    padding-right: 25vw;
+    padding-left: 25vw;
+    padding-top: 5vw;
+} */
+
+h1{
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    color:rgb(47, 179, 20)
+}
+
+ul{
+list-style-type: none;
+align-self: center;
+text-align: center;
+font-size: 2vw;
+}
+
+li{
+    margin-top: 3vw;
+}
+
+a{
+    color: rgb(206, 59, 149);
+    text-decoration: none;
+}
+
+.ul_product{
+    display: flex;
+    flex-direction: row;    
+}
+
+.ul_product li{
+    margin: 2vw;
+}
+
+.bodycategory{
+position: relative;
+    }
+
+.bodycategory p{
+    position: absolute;
+    right: 48vw;
+    top: 27vw;
+}
+
+.bodycategory p a{
+    color:rgb(255, 181, 44);
+}
+
+/* h2{
+    font-weight: 700;;
+    font-size: 3vw;
+    /* animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+} */ */
+/* 
+@keyframes animation {
+from{margin-left: 0%}
+to{margin-left: 90%}
+} */
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.image{
+    background-image: url(assets/bag.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+}
+
+.imagediscount{
+    background-image: url(assets/bag.png);
+    background-size: 100%;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+}
+
+#soldout{
+    font-size: 2vw;
+    z-index: 3;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 31vw;
+    right: 27.5vw;
+    font-weight: 300;
+    color:rgb(250, 109, 43);
+}
+
+.box{
+    width: 10vw;
+    height: 3vw;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 68vw;
+}
+
+.box p{
+    color: white;
+    position: absolute;
+    top: 1.5vw;
+    left: 32%;
+}
+
+
+.productlistgrid h3{
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: -4vw;
+}
+
+.productlistgrid p{
+    font-size: 1.5vw;
+    text-align: center;
+   margin-top: -1vw;
+}
+
+.price{
+    display: inline;
+}
+
+.back{
+    right: 49vw;
+    top: 85vw;
+    position: absolute;
+    padding-bottom: 3vw;
+
+}
+
+/* PRODUCT PAGE */
+
+.bodyproduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headline{
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.productname
+{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.brand{
+    text-align: center;
+    font-size: 2vw;
+    margin: -0.2vh;
+
+}
+
+.productimage{
+    align-self: center;
+    padding: -10vw;
+    max-width: 50%;
+}
+
+.homeback{
+    text-align: center;
+}
+/* 
+h5{
+    font-weight: 500;;
+    font-size: 1vw;
+    text-align: center;
+    padding: -20px;
+    /* animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+/* 
+.brand{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+} */
+
+.buy{
+    width: 10vw;
+    height: 3.5vw;
+    background-color: black;
+    margin-top: 52vw;
+    align-self: center;
+    margin-bottom: 2vw;
+}
+
+.buy p{
+    color: white;
+    text-align: center;
+    text-justify: center;
+}
+
+/* Productlist */
+
+h2{
+    text-align: center;
+}
+/* 
+.productlistgrid{
+    background-color: aqua;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1vw;
+}
+ */
+
+.productlistmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+    margin: 5vw;
+}
+
+img{
+    max-width: 100%;
+}
+
+.soldOut img{
+    opacity: 0.5;
+}
+
+.article .soldOut ::before{
+    content: "Sold Out";
+    position: absolute;
+    background: var(--color);
+    color: var(--background-color);
+    padding: 1rem;
+}
+
+.produclist article .discounted,
+.produclist article .price span{
+    display: none
+}
+
+.produclist article .onSale .discounted{
+    display: flex;
+    justify-content: space-between;
+}
