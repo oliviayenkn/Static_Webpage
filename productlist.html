@@ -7,63 +7,37 @@
     <title>Product List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="productlist">
     <header>
-        <h1>Bags</h1>
-    </header>
-<main class="productlistmain">
+        <h1 class="name">NAME OF SHOP </h1>
+         <h2 class="category">Bags</h2>
+ </header>
+<main class="mainproductlist">
     <!-- <h1>Assignment 07.01.01: Static Product Assignment</h1>
  <h2>Bags</h2> -->
 
 
     <template id="smallproduct">
-        <article>
+       
+        <article class="smallproductarticle">
         <img src = "https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
          alt="Clothes">
-         <h3>Sahara Team Inda Fanwear Round Neck Jersey</h3>
+         <h4>Sahara Team Inda Fanwear Round Neck Jersey</h4>
         <p class="subtle">Tshirts | Nike</p>
         <p class="price"><span>Prev.</span> DKK 1595,-</p>
         <div class="discounted">
             <p>Now DKK 1560,-</p>
-            <p>-34%</p>
-
+            <p class="percent">-34%</p>
         </div>
+        <a href="product.html?id=1165">Read more</a>
     </article>
     </template>
 
 
-    <!-- <div>
-        <div class="image"></div>
-        <h3><a href="product.html">Big Cat Backpack Black</a></h3>
-        <p>PUMA // 1299kr</p>
-    </div>
-    <div>
-        <div class="imagediscount"></div>
-        <h4 id="soldout">SOLD OUT</p>
-        <h3><a href="product.html">Big Cat Backpack Black</a></h3>
-        <p>PUMA // 1299kr</p>
-    </div>
-    <div>
-        <div class="image"></div>
-        <h3><a href="product.html">Big Cat Backpack Black</a></h3>
-        <p>PUMA // 1299kr</p>
-    </div>
-    <div>
-        <div class="image"></div>
-        <h3><a href="product.html">Big Cat Backpack Black</a></h3>
-        <div class="box"><p>-20%</p></div>
-        <p>PUMA // 1299kr</p>
-    </div>
-    <div>
-        <div class="image"></div>
-        <h3><a href="product.html">Big Cat Backpack Black</a></h3>
-        <p>PUMA // 1299kr</p>
-    </div> -->
-<!-- </div> -->
-
-<!-- <p class="back"><a href="index.html">Home</a>
-</p> -->
 </main>
+
+<a class="goback" href="category.html">Go back</a>
+
 <script src="productslist.js"></script>
 
 </body>

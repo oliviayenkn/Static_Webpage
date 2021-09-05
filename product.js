@@ -1,8 +1,7 @@
-// https://www.kea-alt-del.dk/t7/api/products/2801
-// fetch the data
-// populate the page
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
-const url = "https://www.kea-alt-del.dk/t7/api/products/2300";
+const url = "https://www.kea-alt-del.dk/t7/api/products/" + id;
 fetch(url)
     .then((res)=>res.json())
     .then((data)=>showProduct(data));
@@ -12,6 +11,7 @@ console.log(product);
 document.querySelector(".brand").textContent = product.brandname;
 document.querySelector(".productname").textContent =
 product.productdisplayname;
+document.querySelector(".price").textContent = product.price +",-";
 
 document.querySelector(
     "img"
